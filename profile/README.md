@@ -19,6 +19,8 @@ Group members:
 ![B15 - Application Diagrams-C4 - Deployment Diagram](https://github.com/user-attachments/assets/ec5cf505-19f5-47d8-a2bc-e69b6948d7b1)
 
 # Deliverables G.2
+![B15 - Application Diagrams-C4 - Deployment Diagram (2)](https://github.com/user-attachments/assets/7ca03d6f-bbdb-42d7-8c1c-8ede51e54e36)
+
+Karena aplikasi saat ini hanya mengandalkan service Auth sebagai cara mengautentikasi pengguna. Karena sifat bawaan JWT yang stateless, hal ini mungkin saja dapat menjadi celah untuk Session Hijacking. Akhirnya, kami memutuskan mungkin nanti kami akan menambahkan Authenticator Eksternal dari Google untuk me-manage setiap User. Jadi, session management akan menjadi lebih aman. Kami juga berencana untuk menambahkan message queue untuk mengatasi Race Condition jika setiap service bersifat synchronous.
 
 # Deliverables G.3
-
